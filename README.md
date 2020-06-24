@@ -4,6 +4,8 @@
 
 Move a character on a 16x16 pixel tile grid from cell to cell and animate movement one pixel at a time.
 
+![](assets/pixel-by-tile.gif)
+
 1. Restrict `_input` processing to when no movement is in progress.
 2. During movement, skip `_process`/`_physics_process` passes between the times that the character moves 1px.
 
