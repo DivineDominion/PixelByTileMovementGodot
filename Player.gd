@@ -14,7 +14,10 @@ var _step: float = 0 # Accumulates delta, aka fractions of seconds, to time move
 var _pixels_moved: int = 0  # Count movement in distinct integer steps
 
 func show_coordinates() -> void:
-    $Label.text = "x: %d\ny: %d" % [ self.position.x, self.position.y ]
+    $Label.text = "x: %d (%dpx)\ny: %d (%dpx)" % [
+        self.position.x / TILE_SIZE, self.position.x,
+        self.position.y / TILE_SIZE, self.position.y
+    ]
 
 func is_moving() -> bool:
     return self.direction.x != 0 or self.direction.y != 0
