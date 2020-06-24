@@ -13,11 +13,17 @@ func _pixels_per_second_changed(value: float) -> void:
 var _step: float = 0 # Accumulates delta, aka fractions of seconds, to time movement
 var _pixels_moved: int = 0  # Count movement in distinct integer steps
 
+func show_coordinates() -> void:
+    $Label.text = "x: %d\ny: %d" % [ self.position.x, self.position.y ]
+
 func is_moving() -> bool:
     return self.direction.x != 0 or self.direction.y != 0
 
 func _ready() -> void:
     self.pixels_per_second = 1 * TILE_SIZE
+
+func _process(delta: float) -> void:
+    show_coordinates()
 
 func _physics_process(delta: float) -> void:
     if not is_moving(): return
