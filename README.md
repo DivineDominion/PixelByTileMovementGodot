@@ -13,7 +13,7 @@ Resources:
 
 - 👾 [**Play the demo online**](https://divinedominion.github.io/PixelByTileMovementGodot/)
 - 📖 [Read the explanation post](https://christiantietze.de/posts/2020/06/pixel-by-tile-movement-godot/)
-- Confer the [community question](https://christiantietze.de/posts/2020/06/godot-hit-testing/)
+- Confer the [community question](https://godotengine.org/qa/28575/moving-from-tile-to-tile-in-a-grid-like-old-rpgs/)
 
 ## License
 
